@@ -10,14 +10,24 @@ Online HTML, CSS and JavaScript editor to run code online.
   <link rel="stylesheet" href="style.css" />
   <title>Berry</title>
 </head>
-
+<form>
+  <label for="lame">First_name:</label>
+  <input type="text" id="lame" name="lame"><br><br>
+  <label for="rame">Second_Name:</label>
+  <input type="text" id="rame" name="rame"><br><br>
+</form>
+<p id="ret"></p>
 <body>
-  <mo>
-    i fast i rock_star meat super_star
-    
-</mo>
-<amod5>A.blank_pages</amod5>
+  <button onclick="subnit()">Submit</button> 
+  <script>
+    function subnit(){
+      const un = document.getElementById("ret");
+      const unp = document.getElementById('lame').value;
+      const ugp = document.getElementById('rame').value;
+      un.innerHTML = unp + ' '+ ugp;
 
+    }
+  </script>
 </body>
 
 </html>
